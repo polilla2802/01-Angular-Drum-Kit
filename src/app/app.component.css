@@ -24,6 +24,16 @@
     font-size: 3rem;
   }
 
+  i{
+    color: black;
+    font-size: 2rem;
+  }
+
+  
+  i:hover{
+    color:#CD2257;
+  }
+
   p {
     margin: 0;
   }
@@ -44,9 +54,14 @@
   }
 
   .toolbar img {
-    /* margin: 0 16px; */
     height: 100%;
     width: auto;
+    transition: all .7s;
+  }
+
+  .toolbar img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
   }
 
   .toolbar #twitter-logo {
