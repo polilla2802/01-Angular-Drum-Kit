@@ -14,7 +14,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 function log(message: string) {
   console.log(message);
 }
-let message = 'Hello Typescript';
+let message = 'Test';
 log(message); 
 
 function recursiveBinarySearch(n: number, arr: any) {
