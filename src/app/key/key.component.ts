@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class KeyComponent {
 
-  clicked = true;
+  clicked = false;
+
+  handleClick = () => this.clicked = true;
 
 }
