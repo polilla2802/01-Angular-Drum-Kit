@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { KeyComponent } from './key/key.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { KeyComponent } from './key/key.component';
   ],
   imports: [
     BrowserModule,
-    MatSliderModule
+    MatSliderModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
