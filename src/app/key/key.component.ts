@@ -7,8 +7,21 @@ import { Component } from '@angular/core';
 })
 export class KeyComponent {
 
-  clicked = false;
+  clicked:boolean = false;
+  bg:string = "background:white;color:black;";
+  keyblade:string = "light";
 
-  handleClick = () => this.clicked = true;
+  handleClick(){
+    this.clicked = !this.clicked;
+    if(this.clicked === true){
+      console.log("black");
+      this.bg = "background:black;color:white;";
+      this.keyblade = "darkness";
+    } else{
+      console.log("white");
+      this.bg = "background:white;color:black;";
+      this.keyblade = "light";
+    }
+  }
 
 }

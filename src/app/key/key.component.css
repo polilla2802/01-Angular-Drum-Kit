@@ -1,0 +1,12 @@
+:host {
+    width: 300px;
+  }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+    padding: 15% 0;
+    cursor: pointer;
+  }
