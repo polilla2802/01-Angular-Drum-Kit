@@ -20,3 +20,7 @@ log(message);
 function recursiveBinarySearch(n: number, arr: any) {
   let mid = Math.floor(arr.length / 2);
 }
+
+window.addEventListener('keydown' , function(e){
+  console.log(e);
+});

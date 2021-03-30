@@ -8,20 +8,53 @@ import { Component } from '@angular/core';
 export class KeyComponent {
 
   clicked:boolean = false;
-  bg:string = "background:white;color:black;";
-  keyblade:string = "light";
 
-  handleClick(){
-    this.clicked = !this.clicked;
-    if(this.clicked === true){
-      console.log("black");
-      this.bg = "background:black;color:white;";
-      this.keyblade = "darkness";
-    } else{
-      console.log("white");
-      this.bg = "background:white;color:black;";
-      this.keyblade = "light";
+  keys = [
+    {
+      key:'a',
+      sound:'CLAP',
+      keyCode:1
+    },
+    {
+      key:'s',
+      sound:'HIHAT',
+      keyCode:2
+    },
+    {
+      key:'d',
+      sound:'KICK',
+      keyCode:3
+    },
+    {
+      key:'f',
+      sound:'OPENHAT',
+      keyCode:4
+    },
+    {
+      key:'g',
+      sound:'BOOM',
+      keyCode:5
+    },
+    {
+      key:'h',
+      sound:'RIDE',
+      keyCode:6
+    },
+    {
+      key:'j',
+      sound:'SNARE',
+      keyCode:7
+    },
+    {
+      key:'k',
+      sound:'TOM',
+      keyCode:8
+    },
+    {
+      key:'l',
+      sound:'TINK',
+      keyCode:9
     }
-  }
+  ]
 
 }

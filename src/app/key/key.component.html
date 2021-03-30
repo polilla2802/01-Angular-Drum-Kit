@@ -1,7 +1,9 @@
 <!-- <button [disabled]="clicked" (click)="handleClick()">Keyblade</button> -->
 
-<div class="card-container" [style]="bg" (click)="handleClick()">
-
-    {{ keyblade }}
-
-  </div>
+<div *ngFor="let key of keys" class="card-container" [ngClass]="{
+  'black':clicked === false,
+  'white':clicked === true
+}">
+  <h3>{{key.key}}</h3>
+  <p>{{key.sound}}</p>
+</div>
